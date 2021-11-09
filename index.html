@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arts and Crafts of Uttarakhand</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hanalei&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-image: url("https://curlytales.com/wp-content/uploads/2021/07/utt.jpeg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        li{
+            border: 1px solid grey;
+            border-radius: 10px;
+            margin: 15px;
+        }
+        .navbar-collapse, .navbar-header{
+            background-color: rgb(5, 51, 51);
+        }
+        h1{
+            color: white;
+        }
+        #brochureh1, #ppth1{
+            background-color: rgb(123, 207, 222);
+            display: inline-flex;
+            border-radius: 10px;
+        }
+        #brochureh1:hover, #ppth1:hover{
+            background-color: rgb(97, 176, 190);
+            cursor: pointer;
+        }
+        #brochurepic{
+            width: 80%;
+        }
+        #pptpic{
+            width: 80%;
+        }
+        #brochurepic:hover{
+            animation: enlarge 4s;
+            animation-iteration-count: infinite;
+            cursor: pointer;
+        }
+        #pptpic:hover{
+            animation: enlarge 4s;
+            animation-iteration-count: infinite;
+            cursor: pointer;
+        }
+        @keyframes enlarge{
+            0%{
+                width: 80%;
+            }
+            50%{
+                width: 85%;
+            }
+            100%{
+                width: 80%;
+            }
+        }
+        .my_nav_bar{
+            list-style: none;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+            z-index: 10;
+            }
+        html{
+            scroll-behavior: smooth;
+        }
+        #about{
+            background: linear-gradient(rgb(62, 223, 148), rgb(15, 206, 31), green);
+        }
+        hr{
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <nav class="navbar-inverse my_nav_bar" id="main">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" >Arts and crafts of Uttarakhand</a>
+            </div>
+        <div class="collapse navbar-collapse" id="MyNavbar">
+            <ul class="nav navbar-nav">
+                <li id="l" class="links"><a href="#main">Home</a></li>
+                <li id="l2" class="links"><a href="">Download Brochure</a></li>
+                <li id="l3" class="links"><a href="#brochure">Download PPT</a></li>
+                <li id="l4" class="links"><a href="#ppt">Overview</a></li>
+                <li id="l3" class="links"><a href="#aboutb">About Us</a></li>
+                <li id="l6" class="links"><a onclick="notWork()">Sign In</a></li>
+                <li id="l7" class="links"><a onclick="notWork()">Sign Up</a></li>
+            </ul>
+        </div>
+        </nav>
+        <div id="brochure">
+            <h1 id="brochureh1">Download Brochure</h1><hr><br>
+            <button onclick="window.location = 'sstbrochureclass7Uttarakhand.pdf'" class="btn btn-success">Download</button>
+        </div><br><br>
+        <div id="ppt">
+            <h1 id="ppth1">Download PPT</h1><hr><br>
+            <button onclick="window.location ='Arts And Craft Of Uttarakhandppt.pptx'" class="btn btn-info">Download</button>
+        </div><br><br>
+        <div id="overview">
+            <h1>Overview</h1><hr><br>
+            <img id="brochurepic" src="Screenshot 2021-11-09 at 9.29.53 AM.png"><br><br>
+            <img id="pptpic" src="Screenshot 2021-11-09 at 9.30.13 AM.png">
+        </div>
+        <div id="aboutb"></div><br><br><br>
+        <div id="about">
+            <h1>About Us</h1><hr><br>
+            <p>We provide the best Uttarakhand museum where you can see wonderful arts and crafts of Uttarakhand. Visit us to see the beauty of our site</p><br>
+            <p>Vansh - Made the brochure using Virat's data and also added half the data</p><br>
+            <p>Virat - Made the ppt and added the other half of the data</p><br>
+
+            <p>Tejas - Helped us by giving excellent suggestions, images and help</p><br>
+                
+            <p>Shama - Helped us by giving excellent suggestions, data and help</p><br>
+                
+            <p>Tarun - Helped us by giving excellent suggestions, images and help and also helped Virat in making the ppt</p><br>
+        </div>
+
+    </center>
+    <script>
+        function notWork(){
+            swal({
+                title: "Its Fake!",
+                text: "This button is fake as it's for a project",
+                icon: "warning",
+                dangerMode: true,
+            })
+        }
+    </script>
+</body>
+</html>
